@@ -57,6 +57,48 @@
 
     <div class="lower-header">
         <ul class="menus">
+            <li class="dropdown"> <a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#">About Us
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                      <a href="Gall.html">Gallery</a>
+                    </li>
+                  </ul>
+                
+            </li>
+
+            <li class="dropdown"> <a href="#">Our Courses</a></li>
+            <li class="dropdown"> 
+                <a href="#">Online Application
+                    <b class="caret"></b>
+                </a> 
+                <ul class="dropdown-menu">
+                    <li><a href="Enroll.html">Enroll Now</a></li>
+                    <li><a href="#">Online payment</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Co-Work Space
+                   <b class="caret"></b> 
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#">Book a space</a>
+                  </li>
+                </ul>
+            </li>
+            <li class="dropdown"> <a href="#">Community</a></li>
+            <li class="dropdown"> <a href="Update.html">Updates</a></li>
+            <li class="dropdown"><a href="#">Resources</a></li>
+            <li class="dropdown"> <a href="Contact us.html">Contact Us</a></li>
+            <li class="menubtn" onclick=showSidebar()><a href="#"><ion-icon name="menu-outline"></ion-icon></a></li>
+        </ul>
+
+        <ul class="sidebar">
+            <li class="close" hideSidebar()><a href="#"><ion-icon name="close-outline"></ion-icon></a></li>
             <li> <a href="index.html">Home</a></li>
             <li class="dropdown">
                 <a href="#">About Us
@@ -96,7 +138,11 @@
             <li> <a href="Contact us.html">Contact Us</a></li>
         </ul>
         
+        
     </div>
+
+
+       
 
     <div id="background">
       
@@ -154,7 +200,17 @@
     </div>
   </div>
 </footer>
-        
+        <script>
+            function showSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
+
+            function hideSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
+            }
+        </script>
 </body>
 </html>
 

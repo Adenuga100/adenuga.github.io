@@ -179,6 +179,7 @@ img{
 }
 
 
+
 @media screen and (max-width: 900px) and (min-width: 100px){
     .lower-header{
         height: auto;
@@ -199,6 +200,76 @@ img{
 
 }
 
+.sidebar{
+    top: 0;
+    right: 0;
+    height: auto;
+    width: 250px;
+    z-index: 999;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    backdrop-filter: blur(10px);
+    position: relative;
+}
+
+.sidebar li{
+    width: 100%;
+    list-style: none;
+}
+
+.sidebar a{
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+}
+
+.sidebar ion-icon{
+   position: absolute;
+   left: 0%;
+   top: -12%;
+   font-size: 40px;
+
+}
+
+.sidebar .close a:hover{
+    background: none;
+}
+
+.menubtn{
+  display: none;
+}
+
+@media(max-width:800px){
+    .lower-header .menus .dropdown{
+        display: none;
+    }
+    .menubtn{
+        display: block;
+        color: #11ecc8;
+        font-size: 40px;
+        left: -50%;
+        position: relative;
+    }
+
+    .menus ion-icon{
+        color: #fff;
+        left: 130%;
+        top: 20%;
+        position:absolute ;
+        
+    }
+
+    .menus .menubtn a:hover{
+        background: none;
+    }
+}
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+}
 /** dropdown**/
 
 .caret {
